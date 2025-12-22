@@ -11,9 +11,9 @@ import lombok.Builder;
 @Builder
 public class SimpleInterestStrategy implements InterestStrategy {
 
-    private double annualRate; // المعدل السنوي (مثال: 0.05 = 5%)
+    private double annualRate; //المعدل السنوي (مثال: 0.05 = 5%)
 
-    // نحتفظ بالـ constructor المخصص القديم
+    
     public SimpleInterestStrategy(double annualRate) {
         this.annualRate = annualRate;
     }
@@ -41,3 +41,4 @@ public class SimpleInterestStrategy implements InterestStrategy {
         return "SimpleInterestStrategy[rate=" + (annualRate * 100) + "%]";
     }
 }
+
